@@ -1,0 +1,6 @@
+<h1>Your url for <%= #@urls.long_url %> is: </h1>
+<%= #link_to @urls.short_url, @urls.short_url, target: "_blank" %><br /><br />
+stats info : <%= @u %> <br/>
+stats info2 : <%= @urls %>
+<%= link_to "Create another Url", root_path %>
+
