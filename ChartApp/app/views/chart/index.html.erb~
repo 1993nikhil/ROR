@@ -1,0 +1,5 @@
+<body>
+<div id="placeholder" class="flot" style="width: 600px; height: 300px; padding: 0px; position: relative; cursor: auto; :onclick => 'myFunction()'; "></div>
+   
+
+</body>
