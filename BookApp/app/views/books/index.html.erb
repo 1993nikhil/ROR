@@ -1,0 +1,24 @@
+<html>
+<p id="notice"><%= notice %></p>
+<body>
+<h1>Listing Books</h1>
+
+<%= form_tag books_path, :method => 'get', :id => "books_search", remote: true  do %>
+  <%= text_field_tag(:search, params[:search], :onkeyup => 'myFunction()') %>
+  <%= submit_tag "search", :name => nil %>
+<% end %>
+
+  <thead>
+    <tr>
+      <th>Book</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+<div id="books"><%= render 'books' %></div>
+
+
+<br>
+
+<%= link_to 'New Book', new_book_path, id: "new_link", remote: true  %>
+</html>

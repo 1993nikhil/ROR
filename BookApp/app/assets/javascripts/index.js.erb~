@@ -1,0 +1,3 @@
+$("#search").html("<%= j render :partial => "search" %>");
+$("#books").html('<%= j render :partial => "books" %>');
+

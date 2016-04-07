@@ -1,0 +1,6 @@
+$(funtion(){
+ $('#book_search input').keyup(funtion(){
+   $.get($('#book_search').attr('action'), $('#book_search').serialize(), null, 'script' );
+   return false;
+  });
+});
